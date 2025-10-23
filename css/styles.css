@@ -16,6 +16,7 @@ a {
 button {
   cursor: pointer;
   color: inherit;
+  background: transparent;
   font: inherit;
 }
 
@@ -28,6 +29,11 @@ h6,
 p {
   margin: 0;
 }
+
+/* img {
+  display: block;
+  width: 100%;
+} */
 
 /* =====GLOBAL STYLES===== */
 
@@ -137,42 +143,97 @@ h2 {
 }
 .scroll-img {
 }
+
+/* =====SECTION BENEFITS===== */
+
 .benefits {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
 }
+
 .benefits-title {
 }
 .benefits-list {
+  display: flex;
+  column-gap: 88px;
 }
+
 .benefits-item {
+  width: calc((100%-88px * 2) / 3);
 }
+
 .benefits-list-title {
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
+  margin-bottom: 18px;
 }
 .benefits-list-text {
   color: #ffffff;
 }
+
+/* =====SECTION TASTE===== */
+
 .taste {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .taste-title {
   font-weight: 600;
   font-size: 24px;
+  margin: 0 auto 28px;
+  max-width: 412px;
 }
 .taste-text {
+  margin: 0 auto 50px;
+  text-align: center;
+  max-width: 486px;
 }
 .taste-list {
+  display: flex;
+  gap: 24px 32px;
+  flex-wrap: wrap;
 }
 .taste-item {
+  width: calc((100% - 32px * 3) / 4);
+  padding: 28px 23px;
+  border: 1px solid#fd9222;
+  border-radius: 15px;
 }
+
+.taste-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.taste-item:nth-child(even) {
+  background-color: #fff;
+}
+
+.taste-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  border-color: #1e1823;
+  color: #ffffff;
+}
+
 .taste-img {
 }
 .taste-list-title {
+  margin-top: 36px;
 }
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.made .container {
+}
+
 .made-title {
+  margin: 0 auto 50px;
 }
 .made-img {
 }
@@ -181,17 +242,33 @@ h2 {
   font-size: 18px;
   line-height: 1.33;
 }
+
+/* .made-wrap {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .made-list {
 }
 .made-item {
 }
 .products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .products-title {
+  margin: 0 auto 50px;
 }
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 .products-item {
+  width: calc((100% - 18px * 3) / 4);
+  padding: 32px 20px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 .products-img {
 }
@@ -200,55 +277,111 @@ h2 {
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  text-align: center;
 }
 .products-list-text {
   font-size: 12px;
   line-height: 1.17;
+  margin-bottom: 18px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
 }
 .products-list-price {
+  display: block;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  height: 33px;
+  margin: 0 auto;
 }
+
+/* =====SECTION SELLERS===== */
+
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
+  margin: 0 auto 50px;
 }
 .sellers-list {
+  display: flex;
+  column-gap: 16px;
 }
 .sellers-item {
+  width: calc((100%-16px * 2) / 3);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 28px;
+  background-color: #ffffff;
 }
 .sellers-img {
+  margin-bottom: 28px;
 }
 .sellers-list-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
+  text-align: center;
 }
+
+/* =====REVIEWS SRCTION===== */
+
 .reviews {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .reviews-title {
+  margin-bottom: 50px;
 }
 .reviews-list {
+  display: flex;
+  column-gap: 28px;
 }
 .reviews-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 56px 24px 24px;
+  width: calc((100% - 2 * 28px) / 3);
 }
 .reviews-img {
+  margin: 0 auto;
 }
 .reviews-list-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 .reviews-list-text {
   text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  max-width: 275px;
 }
 .reviews-btn {
+  display: block;
+  margin: 50px auto 0;
   font-weight: 600;
   font-size: 18px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
 }
 .footer {
+  margin-top: 60px;
   background-color: #1e1823;
 }
 .footer-text {
